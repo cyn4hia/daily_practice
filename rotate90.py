@@ -1,5 +1,7 @@
 def rotate():
     list = [[1,2,3], [4,5,6], [7,8,9]]
+    # don't use name list, it's a built-in function!
+    # be more general with the input data size. it can be [[1,2], [7,8]]
 
     col1 = []
     col2 = []
