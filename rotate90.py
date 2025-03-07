@@ -1,4 +1,4 @@
-def rotate():
+def rotate(list):
     list_store = []
     # for i in range(len(list)):
     #     list_store.append(list[i])
