@@ -1,0 +1,9 @@
+def convert_temp(celsius):
+    kelvin = celsius + 273.15
+    Fahrenheit = celsius * 1.80 + 32.00
+    print("Temperature at " + str(celsius) + " Celsius converted in Kelvin is " + str(kelvin) + " and converted in Fahrenheit is " + str(Fahrenheit))
+
+
+if __name__ == "___main___":
+    temp = int(input("What is the temperature you would like to convert: "))
+    convert_temp(temp)
