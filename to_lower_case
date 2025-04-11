@@ -1,0 +1,12 @@
+def to_lower_case(s):
+    s = list(s)
+    for i in range(len(s)):
+        if s[i].isupper() == True:
+            s[i] = s[i].lower()
+    sep = ""
+    s = sep.join(s)
+    return s
+
+if __name__ == "__main__":
+    s = "LOVely"
+    print(to_lower_case(s))
