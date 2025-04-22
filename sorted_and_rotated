@@ -1,0 +1,27 @@
+def sorted_and_rotated(a):
+
+    b = []
+    for i in range(len(a)):
+        b.append(a[i])
+
+    for i in range((len(a)-1)):
+        min = i
+        for j in range(i+1, (len(a))):
+            if a[j] < a[min]:
+                min = j
+        if min != i:
+            temp = a[min]
+            a[min] = a[i]
+            a[i] = temp
+    
+    x = b[0] - a[0]
+
+    for i in range(len(a)):
+        if b[i] != a[(i+x) % len(a)]:
+            return False
+        else:
+            return True
+
+if __name__ == "__main__":
+    a = [3,4,5,1,2]
+    print(sorted_and_rotated(a))
