@@ -4,5 +4,5 @@ def to_lowercase(message):
         lowered += i.lower()
     print(lowered)
 if __name__ == "__main__":
-    message = "HELLO"
+    message = "LOVEly"
     to_lowercase(message)
