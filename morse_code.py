@@ -14,7 +14,7 @@ def morse_code(message):
     
     transformations = dict.fromkeys(transformations)
     print(len(transformations))
-
+    
 if __name__ == "__main__":
     message = ["gin","zen","gig","msg"]
     morse_code(message)

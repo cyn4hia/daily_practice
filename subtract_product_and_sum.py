@@ -5,7 +5,7 @@ def subtract_product_and_sum(num):
     string_num = str(num)
     
     for i in string_num:
-        sum += int(i)
+        sum += int(i) 
         product *= int(i)
     
     return product - sum
